@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+}
+
+form {
+  display       : flex;
+  flex-direction: column;
+  width         : 300px;
+  margin        : 20px auto;
+}
+
+input {
+  height: 25px;
+}
+
+button {
+  width           : 150px;
+  height          : 40px;
+  font-size       : 16px;
+  font-weight     : 600;
+  background-color: white;
+  border          : 3px solid grey;
+  border-radius   : 10px;
+  margin          : 10px auto;
+  cursor          : pointer;
+}
+
+button:active {
+  box-shadow: 2px 5px 5px black;
+}
+
+.todo {
+  font-size: 18px;
+  border   : 1px solid black;
+  cursor   : pointer;
+}
+
+.todo.completed {
+  text-decoration: line-through;
+  color          : red;
+}

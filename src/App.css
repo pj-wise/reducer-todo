@@ -3,10 +3,10 @@
 }
 
 form {
-  display       : flex;
+  display: flex;
   flex-direction: column;
-  width         : 300px;
-  margin        : 20px auto;
+  width: 300px;
+  margin: 20px auto;
 }
 
 input {
@@ -14,15 +14,15 @@ input {
 }
 
 button {
-  width           : 150px;
-  height          : 40px;
-  font-size       : 16px;
-  font-weight     : 600;
+  width: 150px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
   background-color: white;
-  border          : 3px solid grey;
-  border-radius   : 10px;
-  margin          : 10px auto;
-  cursor          : pointer;
+  border: 3px solid grey;
+  border-radius: 10px;
+  margin: 10px auto;
+  cursor: pointer;
 }
 
 button:active {
@@ -31,11 +31,20 @@ button:active {
 
 .todo {
   font-size: 18px;
-  border   : 1px solid black;
-  cursor   : pointer;
+  border: 1px solid black;
+  cursor: pointer;
+  display: flex;
+}
+
+p {
+  width: 100%;
+}
+
+.date {
+  margin: auto 2rem auto 0;
 }
 
 .todo.completed {
   text-decoration: line-through;
-  color          : red;
+  color: red;
 }

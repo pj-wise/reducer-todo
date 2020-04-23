@@ -1,29 +1,29 @@
-import React, { useState } from "react";
+import React, { useState } from 'react';
 
-const TodoForm = props => {
+const TodoForm = (props) => {
   const [formState, setFormState] = useState();
 
   return (
     <form
-      onSubmit={event => {
+      onSubmit={(event) => {
         event.preventDefault();
-        console.log("submitted");
-        props.dispatch({ type: "ADD_TODO", payload: formState });
+        console.log('submitted');
+        props.dispatch({ type: 'ADD_TODO', payload: formState });
         event.target.reset();
       }}>
       <input
         type='text'
         placeholder='Add a todo'
-        onChange={event => {
+        onChange={(event) => {
           setFormState(event.target.value);
         }}
       />
       <button>Add Todo</button>
       <button
-        onClick={event => {
+        onClick={(event) => {
           event.preventDefault();
-          console.log("cleared");
-          props.dispatch({ type: "REMOVE_TODO" });
+          console.log('cleared');
+          props.dispatch({ type: 'REMOVE_TODO' });
         }}>
         Clear Completed
       </button>
